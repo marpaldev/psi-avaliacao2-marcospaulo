@@ -1,5 +1,11 @@
 # models.py — Camada Model da Oficina de Conserto (dados em memória)
 
+class Servico:
+    def __init__(self, id, descricao, categoria):
+        self.id = id
+        self.descricao = descricao
+        self.categoria = categoria
+
 usuarios = [
     {"id": 1, "nome": "admin", "senha": "1234"},
 ]

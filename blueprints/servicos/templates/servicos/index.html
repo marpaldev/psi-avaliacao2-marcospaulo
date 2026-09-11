@@ -10,7 +10,7 @@
         <div class="card">
             <h3>{{ s['descricao'] }}</h3>
             <p>{{ s['categoria'] }} — R$ {{ s['valor'] }} — prazo: {{ s['prazo'] }}</p>
-            <a href="{{ url_for('ver_servico', servico_id=s['id']) }}">Ver detalhes</a>
+            <a href="{{ url_for('servicos.ver_servico', servico_id=s['id']) }}">Ver detalhes</a>
         </div>
     {% else %}
         <p>Nenhum serviço encontrado.</p>

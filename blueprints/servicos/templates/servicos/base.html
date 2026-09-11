@@ -15,7 +15,7 @@
 <body>
     <nav>
         <a href="{{ url_for('index') }}">Início</a>
-        <a href="{{ url_for('logout') }}">Sair</a>
+        <a href="{{ url_for('auth.logout') }}">Sair</a>
     </nav>
     <div class="container">
         {% block conteudo %}{% endblock %}
